@@ -15,7 +15,7 @@ Coal_year<- tapply(NEI_coal$Emissions,NEI_coal$year, sum)
 xnames<-names(tapply(pm25$Emissions,pm25$year,sum))
 
 plot(tapply(NEI_coal$Emissions,NEI_coal$year, sum), xaxt="n", type="b", col=4, pch=19, 
-     ylab="PM2.5 (tons)", xlab="Year", main = "Total Coal Combustion-related Emissions of PM2.5 Between 1999 and 2008 in USA")
+     ylab="PM2.5 (tons)", xlab="Year", main = "Total Coal Emissions PM2.5 in USA, 1999-2008")
      axis(1, at=1:length(xnames), labels=xnames)
 
 dev.copy(png, file="plot4.png", height=480, width=480)

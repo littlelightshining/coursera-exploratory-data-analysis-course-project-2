@@ -10,7 +10,7 @@ names(tapply(MarylandData$Emissions,MarylandData$year,sum))
 xnames<-names(tapply(MarylandData$Emissions,MarylandData$year,sum))
 
 plot(tapply(MarylandData$Emissions,MarylandData$year,sum), xaxt="n", type="b", col=4, pch=19, 
-        ylab="PM2.5 (tons)", xlab="Year", main = "Total Emissions from PM2.5 Between 1999 to 2008 in Baltimore City")
+        ylab="PM2.5 (tons)", xlab="Year", main = "Total Emissions PM2.5 in Baltimore, 1999-2008")
         axis(1, at=1:length(xnames), labels=xnames)
         
 dev.copy(png, file="plot2.png", height=480, width=480)

@@ -22,7 +22,7 @@ colnames(Balt_LosAng_motor_Aggr) <- c("City", "year", "emissions")
 
 
 qplot(year, emissions, data = Balt_LosAng_motor_Aggr, color = City, geom = c("point", "line")) +
-        ggtitle("Total Emissions of PM2.5 in Baltimore City(24510) and LA County(06037) Between 1999 and 2008") + 
+        ggtitle("Total Emissions PM2.5 - Baltimore(24510) and LA(06037), 1999-2008") + 
         ylab("Total Emissions (tons)") + 
         xlab("Year")
 

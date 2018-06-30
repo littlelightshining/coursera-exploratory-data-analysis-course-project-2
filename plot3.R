@@ -10,7 +10,7 @@ BaltimoreAggregate_year<- aggregate(BaltimoreData$Emissions, by=list(BaltimoreDa
 colnames(BaltimoreAggregate_year) <- c("type", "year", "emissions")
         
 qplot(year, emissions, data = BaltimoreAggregate_year, facets = .~type) +
-        ggtitle("Total Emissions of PM2.5 in Baltimore City Between 1999 and 2008 by Type of Source") + 
+        ggtitle("Total Emissions PM2.5 in Baltimore by Type of Source, 1999-2008") + 
         ylab("Total Emissions of PM2.5 (tons)") + 
         xlab("Year")
 
